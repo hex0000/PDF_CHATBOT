@@ -1,0 +1,82 @@
+.upload-wrapper {
+    position: fixed;          /* Lock to viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;      /* Vertical center */
+    justify-content: center;  /* Horizontal center */
+    font-family: sans-serif;
+    background-color: #0f0f0f; /* Optional: match dark theme */
+  }
+  
+  
+  
+  .upload-box {
+    width: 100%;
+    max-width: 500px;
+    height: 220px;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload-box:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .upload-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .upload-subtext {
+    font-size: 13px;
+    color: #ccc;
+  }
+  
+  .hidden-input {
+    display: none;
+  }
+  
+  .file-info {
+    color: lightgreen;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .project-title {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ffcc;
+    letter-spacing: 1px;
+    text-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+    animation: fadeIn 0.6s ease-in-out forwards;
+  }
+  
